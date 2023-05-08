@@ -1,3 +1,7 @@
+# Created by https://www.toptal.com/developers/gitignore/api/yii2
+# Edit at https://www.toptal.com/developers/gitignore?templates=yii2
+
+### Yii2 ###
 # yii console commands
 /yii
 /yii_test
@@ -41,3 +45,5 @@ phpunit.phar
 /backend/web/index.php
 /backend/web/index-test.php
 /backend/web/robots.txt
+
+# End of https://www.toptal.com/developers/gitignore/api/yii2
