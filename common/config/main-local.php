@@ -4,7 +4,7 @@ return [
     'components' => [
         'db' => [
             'class' => \yii\db\Connection::class,
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
+            'dsn' => 'mysql:host=localhost;dbname=yiiclass',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
@@ -13,7 +13,7 @@ return [
             'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => '@common/mail',
             // send all mails to a file by default.
-            'useFileTransport' => true,
+            'useFileTransport' => false,
             // You have to set
             //
             // 'useFileTransport' => false,
@@ -21,18 +21,18 @@ return [
             // and configure a transport for the mailer to send real emails.
             //
             // SMTP server example:
-            //    'transport' => [
+               'transport' => [
             //        'scheme' => 'smtps',
-            //        'host' => '',
-            //        'username' => '',
-            //        'password' => '',
-            //        'port' => 465,
-            //        'dsn' => 'native://default',
-            //    ],
+                   'host' => 'sandbox.smtp.mailtrap.io',
+                   'username' => '4502a1ffed268f',
+                   'password' => '21c37800cf7ada',
+                   'port' => 2525,
+                   'dsn' => 'smtp://4502a1ffed268f:21c37800cf7ada@sandbox.smtp.mailtrap.io:2525',
+               ],
             //
-            // DSN example:
+            // // DSN example:
             //    'transport' => [
-            //        'dsn' => 'smtp://user:pass@smtp.example.com:25',
+            //        'dsn' => 'smtp://4502a1ffed268f:21c37800cf7ada@sandbox.smtp.mailtrap.io:2525',
             //    ],
             //
             // See: https://symfony.com/doc/current/mailer.html#using-built-in-transports
